@@ -102,9 +102,17 @@ button{
     background-size: cover;
 }
 
-.account{
-    justify-content: center;
+.search-bar{
+    height:min-content;
 }
+
+.account{
+    justify-self: end;
+    justify-content: center;
+    height:min-content;
+}
+
+
 
 .greetings > .profile_picture{
     height:80px;
@@ -117,6 +125,7 @@ button{
 
 .posting-actions{
     justify-content: center;
+    justify-self: end;
 }
 
 .main-content{
