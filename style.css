@@ -9,6 +9,11 @@ body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+svg{
+    height:1.5rem;
+    width:1.5rem;
+}
+
 ul{
     padding: 0;
     margin: 0;
@@ -56,8 +61,6 @@ a{
 }
 
 .sidebar svg{
-    height:1.2rem;
-    width:1.2rem;
     padding-right: 1.2rem;
 }
 
