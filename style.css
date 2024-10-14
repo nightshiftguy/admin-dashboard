@@ -30,6 +30,16 @@ a{
     color:inherit;
 }
 
+button{
+    background-color: var(--primary);
+    color:var(--white);
+    font-family: inherit;
+    font-weight:600;
+    font-size: inherit;
+    padding: 0.7rem 2.5rem;
+    border-radius: 1rem;
+}
+
 .container{
     height: 100vh;
     display:grid;
