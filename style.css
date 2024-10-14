@@ -1,5 +1,10 @@
 body{
     margin:0;
+    --black:#0a0a0a;
+    --white:#fafafa;
+    --primary:#3730a3;
+    --secondary:#f59e0b;
+    --gray:#d6d3d1;
     --padding:2rem;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
@@ -22,10 +27,10 @@ li{
 }
 
 .sidebar{
-    background-color: blue;
+    background-color: var(--primary);
     grid-row:span 2;
     padding:var(--padding) 0 0 var(--padding);
-    color:white;
+    color:var(--white);
     font-weight: 500;
 }
 
@@ -52,7 +57,7 @@ li{
 }
 
 .sidebar svg path{
-    fill:white;
+    fill:var(--white);
 }
 
 .header{
@@ -60,7 +65,7 @@ li{
 }
 
 .main-content{
-    background-color: lightgray;
+    background-color: var(--gray);
     padding: 0 var(--padding) 0 0;
 }
 
