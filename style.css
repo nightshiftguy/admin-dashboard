@@ -158,7 +158,19 @@ input[type="search"]:focus{
 
 .main-content{
     background-color: var(--gray);
-    padding: 0 var(--padding) 0 0;
+    padding: var(--padding) var(--padding) 4rem 20px;
+    display:grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    gap:20px;
+}
+
+.projects-container{
+    grid-row: span 2;
+    gap:20px;
+}
+
+.main-content > *{
+    border:1px solid black; 
 }
 
 .roboto-regular {
