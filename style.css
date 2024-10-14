@@ -8,6 +8,7 @@ body{
     --gray:#d6d3d1;
     --gray-action:#a7a4a2;
     --padding:2rem;
+    --gap:20px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -159,15 +160,34 @@ input[type="search"]:focus{
 
 .main-content{
     background-color: var(--gray);
-    padding: var(--padding) var(--padding) 4rem 20px;
+    padding: var(--padding) var(--padding) 4rem var(--gap);
     display:grid;
     grid-template: 1fr 1fr / 2fr 1fr;
-    gap:20px;
+    gap:var(--gap);
+}
+
+.main-content > *{
+    display:flex;
+    flex-direction: column;
+}
+
+.main-content > div > *:last-child{
+    flex:1;
 }
 
 .projects-container{
     grid-row: span 2;
-    gap:20px;
+    gap:var(--gap);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(33%,1fr));
+    gap:var(--gap);
+}
+
+.card{
+    background-color: var(--white);
 }
 
 .main-content > *{
