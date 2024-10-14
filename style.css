@@ -3,8 +3,10 @@ body{
     --black:#0a0a0a;
     --white:#fafafa;
     --primary:#3730a3;
+    --primary-action:#292379;
     --secondary:#f59e0b;
     --gray:#d6d3d1;
+    --gray-action:#a7a4a2;
     --padding:2rem;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
@@ -40,6 +42,10 @@ button{
     border-radius: 1rem;
 }
 
+button:hover{
+    background-color: var(--primary-action);
+}
+
 input[type="search"]{
     appearance: none;
     background-color: var(--gray);
@@ -52,7 +58,7 @@ input[type="search"]{
 }
 
 input[type="search"]:hover{
-    filter:brightness(0.9);
+    background-color: var(--gray-action);
 }
 
 input[type="search"]:focus{
