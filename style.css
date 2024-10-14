@@ -40,6 +40,25 @@ button{
     border-radius: 1rem;
 }
 
+input[type="search"]{
+    appearance: none;
+    background-color: var(--gray);
+    font-size: inherit;
+    height: 2em;
+    flex:1;
+    border: none;
+    border-radius: 1em;
+    padding-inline: 1rem;
+}
+
+input[type="search"]:hover{
+    filter:brightness(0.9);
+}
+
+input[type="search"]:focus{
+    outline:none;
+}
+
 .container{
     height: 100vh;
     display:grid;
@@ -104,6 +123,7 @@ button{
 
 .search-bar{
     height:min-content;
+    justify-content: space-between;
 }
 
 .account{
@@ -112,7 +132,9 @@ button{
     height:min-content;
 }
 
-
+.account > h2{
+    margin:0;
+}
 
 .greetings > .profile_picture{
     height:80px;
