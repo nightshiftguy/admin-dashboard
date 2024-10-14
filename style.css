@@ -1,3 +1,18 @@
 body{
-    background-color: black;
+    margin:0;
+}
+
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template: 1fr 4fr/ 1fr 5fr;
+}
+
+.sidebar{
+    background-color: blue;
+    grid-row:span 2;
+}
+
+.main-content{
+    background-color: lightgray;
 }
