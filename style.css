@@ -106,6 +106,15 @@ button{
     justify-content: center;
 }
 
+.greetings > .profile_picture{
+    height:80px;
+    width:80px;
+}
+
+.greetings h2, .greetings p{
+    margin: 0.5rem 0;
+}
+
 .posting-actions{
     justify-content: center;
 }
