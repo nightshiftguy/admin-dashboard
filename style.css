@@ -193,6 +193,22 @@ input[type="search"]:focus{
 
 .card{
     background-color: var(--white);
+    padding:1rem;
+}
+
+.projects > .card{
+    border-radius:10px;
+    overflow:hidden;
+    position: relative;
+}
+
+.line{
+    height: 100%;
+    width:10px;
+    position:absolute;
+    left:0;
+    top:0;
+    background-color: var(--secondary);
 }
 
 .main-content > *{
