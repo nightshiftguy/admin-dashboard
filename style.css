@@ -174,29 +174,26 @@ input[type="search"]:focus{
 .main-content > *{
     display:flex;
     flex-direction: column;
+    gap:var(--gap);
 }
 
 .main-content > div > *:last-child{
     flex:1;
+    display:grid;
 }
 
 .projects-container{
     grid-row: span 2;
-    gap:var(--gap);
 }
 
 .projects{
-    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(33%,1fr));
     gap:var(--gap);
 }
 
-.card{
+.projects > .card{
     background-color: var(--white);
     padding:1rem;
-}
-
-.projects > .card{
     border-radius:10px;
     overflow:hidden;
     position: relative;
@@ -211,8 +208,15 @@ input[type="search"]:focus{
     background-color: var(--secondary);
 }
 
-.main-content > *{
-    border:1px solid black; 
+.announcements, .trending{
+    border-radius:10px;
+    padding:1rem;
+    background-color: var(--white);
+}
+
+.announcements-border{
+    border-bottom:var(--gray) solid 1px;
+    height:1px;
 }
 
 .roboto-regular {
