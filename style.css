@@ -82,7 +82,7 @@ input[type="search"]:focus{
 .sidebar{
     background-color: var(--primary);
     grid-row:span 2;
-    padding:var(--padding) 0 0 var(--padding);
+    padding:var(--padding) var(--padding) 0 var(--padding);
     color:var(--white);
     font-weight: 500;
 }
@@ -99,12 +99,10 @@ input[type="search"]:focus{
     font-size:1.3rem;
 }
 
-.sidebar p{
-    display: inline;
-}
-
-.sidebar svg{
-    padding-right: 1.2rem;
+.sidebar li a{
+    display:grid;
+    grid-template-columns: min-content 1fr;
+    gap:1.3rem;
 }
 
 .sidebar svg path{
