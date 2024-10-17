@@ -220,9 +220,8 @@ input[type="search"]:focus{
     padding:1rem 0  ;
 }
 
-.announcements-border{
+.announcements > .card:not(:last-child){
     border-bottom:var(--gray) solid 1px;
-    height:1px;
 }
 
 .trending > .card{
